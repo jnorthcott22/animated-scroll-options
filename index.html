@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>CSS3 Animated Scrolling Page</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="waypoints.min.js"></script>
+  <script src="animated-scroll.js"></script>
+  
+  
+  <link rel="stylesheet" media="all" href="animation-library.css">
+  <style type="text/css">
+    .clearfix:after {
+    	visibility: hidden;
+    	display: block;
+    	font-size: 0;
+    	content: " ";
+    	clear: both;
+    	height: 0;
+    	}
+    * html .clearfix             { zoom: 1; } /* IE6 */
+    *:first-child+html .clearfix { zoom: 1; } /* IE7 */
+    
+    
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      -webkit-backface-visibility:hidden
+    }
+    article,
+    header {
+      box-sizing: border-box;
+      margin: 0 auto;
+      width: 960px;
+      overflow: hidden;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 1em 0;
+    }
+    section {
+      margin-bottom: 5em;
+    }
+    
+    .first {
+      height: 500px;
+    }
+    .box {
+      background: #EFEFEF;
+      padding: 0.8em 1.5em;
+    }
+    .steps {
+      visibility: hidden;
+    }
+    
+    .step-1 aside {
+      box-sizing: border-box;
+      float: left;
+      margin:0 1em 1em 0;
+      width: 295px;
+    }
+    .step-1 aside.last {
+      margin-right: 0;
+    }
+    
+    .step-box aside {
+      box-sizing: border-box;
+      float: left;
+      margin:0 1em 1em 0;
+      width: 215px;
+    }
+    .step-box aside.last {
+      margin-right: 0;
+    }
+    
+    
+    
+  </style>
+</head>
+
+<body>
+<header>
+  <section>
+    <h1>CSS3 Animated Scrolling Page</h1>
+  </section>
+</header>
+  
+<article>
+  <section class="box first">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere sem et ipsum posuere, porta pellentesque diam rhoncus. Mauris id lorem id dui porta porta. Aenean sed interdum odio. Nullam in imperdiet odio. Suspendisse dapibus interdum risus. Ut ornare pellentesque pellentesque. Sed vestibulum augue in tellus imperdiet, feugiat sodales risus fermentum. Nunc augue mi, pharetra eu blandit non, accumsan vitae purus. Nullam a consequat dui, quis ultricies nulla.</p>
+  
+    <p>Aenean velit nibh, luctus vitae purus at, semper mollis lacus. Nunc pulvinar, lectus eu condimentum blandit, neque tellus iaculis diam, sit amet cursus mi urna ac dui. Vestibulum rutrum eu risus vitae vestibulum. Donec vitae odio mollis, feugiat mauris eu, eleifend eros. Fusce sodales magna erat, eu consectetur libero fringilla ac. Integer suscipit, elit quis condimentum mollis, turpis neque eleifend neque, vel tincidunt velit nulla ut lorem. Mauris id neque imperdiet, eleifend lorem eu, imperdiet felis. Morbi gravida iaculis vehicula. Integer quis elit ac leo mollis ullamcorper eu non magna. Quisque at sollicitudin tellus. Ut bibendum arcu vehicula venenatis pellentesque. Aenean ligula tortor, volutpat volutpat fermentum et, pretium id elit. Nulla porta gravida rutrum. Pellentesque a est malesuada, lobortis diam nec, ultrices nulla. Pellentesque sit amet congue magna, quis sollicitudin metus. Phasellus eget laoreet risus.</p> 
+    
+    <h2>Keep Scrolling to See the Magic Unfold</h2>
+  </section>
+  
+  
+  <section class="box steps step-1 clearfix">
+    <h2>Our Work with 3 Boxes</h2>
+    <aside>
+      <img src="http://placehold.it/295x220" alt="" />
+      <p>Cras eu blandit neque. Nullam interdum imperdiet lorem a ornare. In varius gravida eros, non vehicula sapien. Vivamus tempus ligula ac tincidunt sollicitudin. Donec ipsum ante, luctus aliquam urna et, semper mattis elit.</p>
+    </aside>
+    <aside>
+      <img src="http://placehold.it/295x220" alt="" />
+      <p>Nunc nec nisi nulla. Nullam et viverra ligula, sit amet tincidunt tellus. Ut suscipit, diam cursus ullamcorper aliquet, libero mauris fermentum lorem, vitae tristique velit lacus at lacus. Donec at tincidunt sem, eget luctus libero. Aliquam eu ornare purus.</p>
+    </aside>
+    <aside class="last">
+      <img src="http://placehold.it/295x220" alt="" />
+      <p>Vivamus ultrices dui in blandit accumsan. Vivamus convallis arcu magna, vel hendrerit mauris placerat quis. Donec ut ante faucibus, fermentum justo nec, malesuada tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet posuere sapien, nec pellentesque mauris.</p>
+    </aside>
+  </section>
+  
+  <section class="box steps step-box clearfix">
+    <h2>Our Work with 4 Boxes</h2>
+    <aside>
+      <img src="http://placehold.it/220" alt="" />
+      <p>Cras eu blandit neque. Nullam interdum imperdiet lorem a ornare. In varius gravida eros, non vehicula sapien. Vivamus tempus ligula ac tincidunt sollicitudin. Donec ipsum ante, luctus aliquam urna et, semper mattis elit.</p>
+    </aside>
+    <aside>
+      <img src="http://placehold.it/220" alt="" />
+      <p>Nunc nec nisi nulla. Nullam et viverra ligula, sit amet tincidunt tellus. Ut suscipit, diam cursus ullamcorper aliquet, libero mauris fermentum lorem, vitae tristique velit lacus at lacus. Donec at tincidunt sem, eget luctus libero. Aliquam eu ornare purus.</p>
+    </aside>
+    <aside>
+      <img src="http://placehold.it/220" alt="" />
+      <p>Nunc nec nisi nulla. Nullam et viverra ligula, sit amet tincidunt tellus. Ut suscipit, diam cursus ullamcorper aliquet, libero mauris fermentum lorem, vitae tristique velit lacus at lacus. Donec at tincidunt sem, eget luctus libero. Aliquam eu ornare purus.</p>
+    </aside>
+    <aside class="last">
+      <img src="http://placehold.it/220" alt="" />
+      <p>Vivamus ultrices dui in blandit accumsan. Vivamus convallis arcu magna, vel hendrerit mauris placerat quis. Donec ut ante faucibus, fermentum justo nec, malesuada tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet posuere sapien, nec pellentesque mauris.</p>
+    </aside>
+    
+  </section>
+  
+  <section class="box steps step-2">
+    <p>Nullam mi massa, consequat id porttitor eu, lacinia et ante. In sed condimentum neque. Aenean consequat congue tempor. Nulla commodo vel ipsum nec semper. Morbi consectetur convallis gravida. Nunc porta, massa in imperdiet posuere, nunc sem mollis arcu, at ultrices lectus leo in sapien. Aenean tempor, justo convallis elementum convallis, risus nisi ultricies mi, in venenatis arcu turpis ut eros. Vivamus risus odio, tincidunt et tellus eu, semper venenatis dui. Quisque gravida hendrerit vulputate. Quisque faucibus, sapien eu semper molestie, lorem elit pretium purus, non ultrices elit diam quis turpis.</p>
+    
+    <p>Cras eu blandit neque. Nullam interdum imperdiet lorem a ornare. In varius gravida eros, non vehicula sapien. Vivamus tempus ligula ac tincidunt sollicitudin. Donec ipsum ante, luctus aliquam urna et, semper mattis elit. Nunc nec nisi nulla. Nullam et viverra ligula, sit amet tincidunt tellus. Ut suscipit, diam cursus ullamcorper aliquet, libero mauris fermentum lorem, vitae tristique velit lacus at lacus. Donec at tincidunt sem, eget luctus libero. Aliquam eu ornare purus. Vivamus ultrices dui in blandit accumsan. Vivamus convallis arcu magna, vel hendrerit mauris placerat quis. Donec ut ante faucibus, fermentum justo nec, malesuada tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet posuere sapien, nec pellentesque mauris.</p>
+  </section>
+  
+  
+  <section class="box steps step-3">
+    <p>Cras eu blandit neque. Nullam interdum imperdiet lorem a ornare. In varius gravida eros, non vehicula sapien. Vivamus tempus ligula ac tincidunt sollicitudin. Donec ipsum ante, luctus aliquam urna et, semper mattis elit. Nunc nec nisi nulla. Nullam et viverra ligula, sit amet tincidunt tellus. Ut suscipit, diam cursus ullamcorper aliquet, libero mauris fermentum lorem, vitae tristique velit lacus at lacus. Donec at tincidunt sem, eget luctus libero. Aliquam eu ornare purus. Vivamus ultrices dui in blandit accumsan. Vivamus convallis arcu magna, vel hendrerit mauris placerat quis. Donec ut ante faucibus, fermentum justo nec, malesuada tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet posuere sapien, nec pellentesque mauris.</p>
+    
+    <p>Donec justo urna, scelerisque eget metus eu, ullamcorper pretium justo. Integer semper et justo eget rutrum. Nullam quis diam venenatis, posuere neque et, rutrum eros. Sed in egestas mauris, ut aliquam nibh. Proin quis nunc in lectus viverra condimentum. Sed non magna purus. Nunc sit amet elit vitae orci placerat semper vel imperdiet eros. Integer venenatis porttitor turpis ac mattis. Pellentesque adipiscing nunc ac ante varius feugiat. Aenean laoreet diam vel sapien mattis, vitae lobortis dui laoreet. Donec lacinia, nisl at vulputate cursus, orci tortor bibendum eros, in auctor augue velit eget justo. Integer viverra non dolor sit amet pellentesque. Praesent ac odio augue. Nulla facilisi. Aliquam tempus mi in eleifend interdum. Vivamus in porttitor risus, id pharetra nisl.</p>
+  </section>
+  
+  
+  <section class="box steps step-4">
+    <img src="http://placehold.it/920x200" />
+  </section>
+  
+  
+  <section class="box steps step-5">
+    <p>Aenean velit nibh, luctus vitae purus at, semper mollis lacus. Nunc pulvinar, lectus eu condimentum blandit, neque tellus iaculis diam, sit amet cursus mi urna ac dui. Vestibulum rutrum eu risus vitae vestibulum. Donec vitae odio mollis, feugiat mauris eu, eleifend eros. Fusce sodales magna erat, eu consectetur libero fringilla ac. Integer suscipit, elit quis condimentum mollis, turpis neque eleifend neque, vel tincidunt velit nulla ut lorem. Mauris id neque imperdiet, eleifend lorem eu, imperdiet felis. Morbi gravida iaculis vehicula. Integer quis elit ac leo mollis ullamcorper eu non magna. Quisque at sollicitudin tellus. Ut bibendum arcu vehicula venenatis pellentesque. Aenean ligula tortor, volutpat volutpat fermentum et, pretium id elit. Nulla porta gravida rutrum. Pellentesque a est malesuada, lobortis diam nec, ultrices nulla. Pellentesque sit amet congue magna, quis sollicitudin metus. Phasellus eget laoreet risus.</p>
+    
+    <p>Nullam mi massa, consequat id porttitor eu, lacinia et ante. In sed condimentum neque. Aenean consequat congue tempor. Nulla commodo vel ipsum nec semper. Morbi consectetur convallis gravida. Nunc porta, massa in imperdiet posuere, nunc sem mollis arcu, at ultrices lectus leo in sapien. Aenean tempor, justo convallis elementum convallis, risus nisi ultricies mi, in venenatis arcu turpis ut eros. Vivamus risus odio, tincidunt et tellus eu, semper venenatis dui. Quisque gravida hendrerit vulputate. Quisque faucibus, sapien eu semper molestie, lorem elit pretium purus, non ultrices elit diam quis turpis.</p>
+  </section>
+  
+  
+  <section class="box steps step-6">
+   <img src="http://placehold.it/920x200" />
+  </section>
+  
+
+  <section class="box steps step-7">
+    <p>Aenean velit nibh, luctus vitae purus at, semper mollis lacus. Nunc pulvinar, lectus eu condimentum blandit, neque tellus iaculis diam, sit amet cursus mi urna ac dui. Vestibulum rutrum eu risus vitae vestibulum. Donec vitae odio mollis, feugiat mauris eu, eleifend eros. Fusce sodales magna erat, eu consectetur libero fringilla ac. Integer suscipit, elit quis condimentum mollis, turpis neque eleifend neque, vel tincidunt velit nulla ut lorem. Mauris id neque imperdiet, eleifend lorem eu, imperdiet felis. Morbi gravida iaculis vehicula. Integer quis elit ac leo mollis ullamcorper eu non magna. Quisque at sollicitudin tellus. Ut bibendum arcu vehicula venenatis pellentesque. Aenean ligula tortor, volutpat volutpat fermentum et, pretium id elit. Nulla porta gravida rutrum. Pellentesque a est malesuada, lobortis diam nec, ultrices nulla. Pellentesque sit amet congue magna, quis sollicitudin metus. Phasellus eget laoreet risus.</p>
+    
+    <p>Nullam mi massa, consequat id porttitor eu, lacinia et ante. In sed condimentum neque. Aenean consequat congue tempor. Nulla commodo vel ipsum nec semper. Morbi consectetur convallis gravida. Nunc porta, massa in imperdiet posuere, nunc sem mollis arcu, at ultrices lectus leo in sapien. Aenean tempor, justo convallis elementum convallis, risus nisi ultricies mi, in venenatis arcu turpis ut eros. Vivamus risus odio, tincidunt et tellus eu, semper venenatis dui. Quisque gravida hendrerit vulputate. Quisque faucibus, sapien eu semper molestie, lorem elit pretium purus, non ultrices elit diam quis turpis.</p>
+  </section>
+  
+  <section class="box steps step-8">
+    <img src="http://placehold.it/920x200" />
+  </section>
+  
+  
+  <section class="box steps step-9">
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere sem et ipsum posuere, porta pellentesque diam rhoncus. Mauris id lorem id dui porta porta. Aenean sed interdum odio. Nullam in imperdiet odio. Suspendisse dapibus interdum risus. Ut ornare pellentesque pellentesque. Sed vestibulum augue in tellus imperdiet, feugiat sodales risus fermentum. Nunc augue mi, pharetra eu blandit non, accumsan vitae purus. Nullam a consequat dui, quis ultricies nulla.</p>
+    <p>Cras eu blandit neque. Nullam interdum imperdiet lorem a ornare. In varius gravida eros, non vehicula sapien. Vivamus tempus ligula ac tincidunt sollicitudin. Donec ipsum ante, luctus aliquam urna et, semper mattis elit. Nunc nec nisi nulla. Nullam et viverra ligula, sit amet tincidunt tellus. Ut suscipit, diam cursus ullamcorper aliquet, libero mauris fermentum lorem, vitae tristique velit lacus at lacus. Donec at tincidunt sem, eget luctus libero. Aliquam eu ornare purus. Vivamus ultrices dui in blandit accumsan. Vivamus convallis arcu magna, vel hendrerit mauris placerat quis. Donec ut ante faucibus, fermentum justo nec, malesuada tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet posuere sapien, nec pellentesque mauris.</p>
+  </section>
+  
+  
+  <section class="box steps step-10">
+    <p>Cras eu blandit neque. Nullam interdum imperdiet lorem a ornare. In varius gravida eros, non vehicula sapien. Vivamus tempus ligula ac tincidunt sollicitudin. Donec ipsum ante, luctus aliquam urna et, semper mattis elit. Nunc nec nisi nulla. Nullam et viverra ligula, sit amet tincidunt tellus. Ut suscipit, diam cursus ullamcorper aliquet, libero mauris fermentum lorem, vitae tristique velit lacus at lacus. Donec at tincidunt sem, eget luctus libero. Aliquam eu ornare purus. Vivamus ultrices dui in blandit accumsan. Vivamus convallis arcu magna, vel hendrerit mauris placerat quis. Donec ut ante faucibus, fermentum justo nec, malesuada tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed sit amet posuere sapien, nec pellentesque mauris.</p>
+    
+    <p>Donec justo urna, scelerisque eget metus eu, ullamcorper pretium justo. Integer semper et justo eget rutrum. Nullam quis diam venenatis, posuere neque et, rutrum eros. Sed in egestas mauris, ut aliquam nibh. Proin quis nunc in lectus viverra condimentum. Sed non magna purus. Nunc sit amet elit vitae orci placerat semper vel imperdiet eros. Integer venenatis porttitor turpis ac mattis. Pellentesque adipiscing nunc ac ante varius feugiat. Aenean laoreet diam vel sapien mattis, vitae lobortis dui laoreet. Donec lacinia, nisl at vulputate cursus, orci tortor bibendum eros, in auctor augue velit eget justo. Integer viverra non dolor sit amet pellentesque. Praesent ac odio augue. Nulla facilisi. Aliquam tempus mi in eleifend interdum. Vivamus in porttitor risus, id pharetra nisl.</p>
+  </section>
+  
+  
+  <section class="box steps step-11">
+    <img src="http://placehold.it/920x200" />
+  </section>
+  
+  
+  <section class="box steps step-12">
+    <p>Aenean velit nibh, luctus vitae purus at, semper mollis lacus. Nunc pulvinar, lectus eu condimentum blandit, neque tellus iaculis diam, sit amet cursus mi urna ac dui. Vestibulum rutrum eu risus vitae vestibulum. Donec vitae odio mollis, feugiat mauris eu, eleifend eros. Fusce sodales magna erat, eu consectetur libero fringilla ac. Integer suscipit, elit quis condimentum mollis, turpis neque eleifend neque, vel tincidunt velit nulla ut lorem. Mauris id neque imperdiet, eleifend lorem eu, imperdiet felis. Morbi gravida iaculis vehicula. Integer quis elit ac leo mollis ullamcorper eu non magna. Quisque at sollicitudin tellus. Ut bibendum arcu vehicula venenatis pellentesque. Aenean ligula tortor, volutpat volutpat fermentum et, pretium id elit. Nulla porta gravida rutrum. Pellentesque a est malesuada, lobortis diam nec, ultrices nulla. Pellentesque sit amet congue magna, quis sollicitudin metus. Phasellus eget laoreet risus.</p>
+    
+    <p>Nullam mi massa, consequat id porttitor eu, lacinia et ante. In sed condimentum neque. Aenean consequat congue tempor. Nulla commodo vel ipsum nec semper. Morbi consectetur convallis gravida. Nunc porta, massa in imperdiet posuere, nunc sem mollis arcu, at ultrices lectus leo in sapien. Aenean tempor, justo convallis elementum convallis, risus nisi ultricies mi, in venenatis arcu turpis ut eros. Vivamus risus odio, tincidunt et tellus eu, semper venenatis dui. Quisque gravida hendrerit vulputate. Quisque faucibus, sapien eu semper molestie, lorem elit pretium purus, non ultrices elit diam quis turpis.</p>
+  </section>
+
+</article>
+</body>
+</html>
